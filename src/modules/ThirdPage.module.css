@@ -1,0 +1,66 @@
+*:focus {
+    outline: none;
+}
+
+.progress_bar {
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(90deg, #5558FA 50%, #00000014 50%);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    border-radius: 15px;
+    align-content: center;
+}
+/* TODO: Убрать повторяющиеся стили для прогресс бара. Чтобы был один общий класс для состояния и к нему добавлялись стили активного*/
+.progress_bar_inner {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #A6A6A6;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.progress_bar_inner_active {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: blue;
+    font-size: 12px;
+    font-weight: bold;
+    display: grid;
+    align-items: center;
+}
+
+.form_container {
+    font-size: 14px;
+    margin-top: 52px;
+}
+
+.form {
+    padding: 12px;
+    width: 300px;
+    height: 44px;
+    background: rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.checkbox {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+}
+
+/*TODO: Положить это в модуль button*/
+
+.button_trash {
+    background:none;
+    border: none;
+}
+
+.button_trash:hover {
+    cursor: pointer;
+    filter: drop-shadow(0px 4px 4px rgb(85, 88, 250));
+}

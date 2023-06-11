@@ -1,0 +1,25 @@
+.form {
+    padding: 12px;
+    width: 300px;
+    height: 44px;
+    background: rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    margin-top: 8px;
+
+}
+
+.form_container {
+    display: flex;
+    justify-items: start;
+    width: 100%;
+    height: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+    flex: none;
+    order: 0;
+    margin-top: 52px;
+}
