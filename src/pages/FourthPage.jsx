@@ -3,7 +3,7 @@ import page from "../modules/Page.module.css";
 import btn from "../modules/Button.module.css"
 import {Field, Form, Formik} from "formik";
 import {useState} from "react";
-import {ModalWindow} from "./ModalWindow";
+import {ModalWindow} from "../ui/ModalWindow";
 import check_mark from "../assets/check-mark-bar.svg";
 import circle from "../assets/circle.svg";
 import {useNavigate} from "react-router-dom";

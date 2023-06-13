@@ -5,8 +5,16 @@ import page from "../modules/Page.module.css";
 import circle from '../assets/circle.svg'
 import {ErrorMessage, Field, FieldArray, Form, Formik} from "formik";
 import {useNavigate} from "react-router-dom";
+import {Select} from "../ui/Select/Select";
 
 export function SecondPage() {
+	const options = [
+		{value: 'man', label: 'man'},
+		{value: 'woman', label: 'woman'},
+	];
+	function handleSelectChange(value) {
+		console.log(`Selected value is ${value}`);
+	}
 	const navigate = useNavigate();
 	return (
 		<>
@@ -40,11 +48,7 @@ export function SecondPage() {
 										<p>Surname</p>
 										<Field className={style.form} type="text" name="surname" placeholder="Введите фамилию"/>
 										<p>Sex</p>
-										<Field className={style.form} as="select" name="sex" placeholder="Не выбрано">
-											<option value="" hidden>Не выбрано</option>
-											<option value="Man" style={{padding: '10px'}}>Man</option>
-											<option value="Woman">Woman</option>
-										</Field>
+										<Select onChange={handleSelectChange} options={options}/>
 									</div>
 								</Form>
 						</Formik>

@@ -1,8 +1,8 @@
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import {FirstPage} from "./FirstPage";
-import {SecondPage} from "./SecondPage";
-import {ThirdPage} from "./ThirdPage";
-import {FourthPage} from "./FourthPage";
+import {FirstPage} from "../pages/FirstPage";
+import {SecondPage} from "../pages/SecondPage";
+import {ThirdPage} from "../pages/ThirdPage";
+import {FourthPage} from "../pages/FourthPage";
 
 export function AppRouter() {
 	return (
